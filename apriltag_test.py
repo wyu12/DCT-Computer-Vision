@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Read image
-img = cv2.imread('Data/Olympus50(400ISO)/P7210050.JPG', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('data/default_image.JPG', cv2.IMREAD_GRAYSCALE)
 at = img[1025:1175, 3350:3500]
 
 # Run detection on whole image, zoomed apriltag, and rotated apriltag
@@ -19,12 +19,12 @@ try:
 except:
     print "Detection on whole image failed"
 """
-print "Detection on whole image fails (too large?)"
+print("Detection on whole image fails (too large?)")
 
 # detection on zoomed apriltag (unrotated)
 res_at = detector.detect(at)
-print "Result (zoomed apriltag, unrotated):"
-print res_at
+print("Result (zoomed apriltag, unrotated):")
+print(res_at)
 
 # detection on zoomed apriltag (rotated)
 rows,cols = at.shape
@@ -33,8 +33,8 @@ rot = cv2.warpAffine(at,M,(cols,rows))
 fit = rot[35:89, 45:99]
 
 res_fit = detector.detect(fit)
-print "Result (zoomed apriltag, rotated):"
-print res_fit
+print("Result (zoomed apriltag, rotated):")
+print(res_fit)
 
 # Plot whole image
 plt.figure(0)
