@@ -20,6 +20,7 @@ def rotate(img, angle):
     return cv2.warpAffine(img, matrix, (cols, rows))
 
 
+# Source: https://stackoverflow.com/questions/55654142/detect-if-a-text-image-is-upside-down
 def straighten(img):
     angle = 0
     max_rate = 0
