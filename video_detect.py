@@ -5,7 +5,7 @@ import numpy as np
 cap = cv2.VideoCapture(0)
 detector = apriltag.Detector()
 
-img = cv2.imread("data/apriltags.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("data/Track Pictures 10:15/Screen Shot.png", cv2.IMREAD_GRAYSCALE)
 #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 result = detector.detect(img)
 print(result)
