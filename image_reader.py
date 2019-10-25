@@ -13,6 +13,7 @@ except:
 detector = apriltag.Detector()
 
 img = cv2.imread(fname, cv2.IMREAD_GRAYSCALE)
+
 #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 result = detector.detect(img)
 print(result)
