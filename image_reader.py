@@ -18,12 +18,14 @@ img = cv2.imread(fname, cv2.IMREAD_GRAYSCALE)
 result = detector.detect(img)
 print(result)
 
+output_fname = fname.split(".")[0] + "_output.jpg"
+
 # write to logfile
 write = True
 if write:
     with open("log.csv", "a+") as f:
         for res in result:
-            f.write(fname +","+ res.tag_family +","+ str(res.tag_id)+"\n")
+            f.write(fname +","+ res.tag_family +","+ str(res.tag_id)+","+output_fname"\n")
 
 # draw a bounding quadrilateral (optional)
 for res in result:
