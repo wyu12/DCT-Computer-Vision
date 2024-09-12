@@ -147,14 +147,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.video_detect">
+  <component name="RunManager" selected="Python.apriltag_test">
     <configuration name="apriltag_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DCT-Computer-Vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -194,8 +191,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.video_detect" />
         <item itemvalue="Python.apriltag_test" />
+        <item itemvalue="Python.video_detect" />
       </list>
     </recent_temporary>
   </component>
